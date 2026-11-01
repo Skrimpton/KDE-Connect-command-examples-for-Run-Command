@@ -6,6 +6,7 @@
 ```
 command -v qdbus qdbus{5,6} qdbus-qt{5,6}
 ```
+<br>
 
 # Sound (PC / System) [`qdbus`]
 
@@ -45,6 +46,7 @@ command -v qdbus qdbus{5,6} qdbus-qt{5,6}
 ```
 "$(command -v qdbus qdbus{5,6} qdbus-qt{5,6})" org.kde.kglobalaccel /component/kmix invokeShortcut "push_to_talk"
 ```
+<br>
 
 # Media Controls [`qdbus`]
 
@@ -96,7 +98,7 @@ command -v qdbus qdbus{5,6} qdbus-qt{5,6}
 ```
 "$(command -v qdbus qdbus{5,6} qdbus-qt{5,6})" org.kde.keyboard /component/mediacontrol org.kde.kglobalaccel.Component.invokeShortcut mediavolumedown
 ```
-
+<br>
 
 # Power management (Powerdevil) [`qdbus`]
 ## Power management - Screen
@@ -121,7 +123,7 @@ command -v qdbus qdbus{5,6} qdbus-qt{5,6}
 ```
 "$(command -v qdbus qdbus{5,6} qdbus-qt{5,6})" org.kde.kglobalaccel /component/org_kde_powerdevil org.kde.kglobalaccel.Component.invokeShortcut "Turn Off Screen"
 ```
-
+<br>
 
 ## Power management - Computer
 PowerOff / PowerDown
@@ -166,7 +168,7 @@ PowerOff / PowerDown
 ```
 "$(command -v qdbus qdbus{5,6} qdbus-qt{5,6})" org.kde.kglobalaccel /component/org_kde_powerdevil org.kde.kglobalaccel.Component.invokeShortcut "Toggle Keyboard Backlight"
 ```
-
+<br>
 
 # Other commands
 #### Find available devices using `kdeconnect-cli`
