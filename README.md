@@ -145,6 +145,10 @@ PowerOff / PowerDown
 
 
 # Other commands
+#### Find available devices using `kdeconnect-cli`
+```
+kdeconnect-cli --list-available
+```
 
 ## Screenshot to device / phone
 Inspired by and building on: [Useful_commands#Screen_capture: kde userbase wiki](https://userbase.kde.org/KDE_Connect/Tutorials/Useful_commands#Screen_capture)
