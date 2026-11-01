@@ -1,4 +1,7 @@
-> It's yet another list of KDE Connect command examples for "Run Command" 🙃
+> It's yet another list of KDE Connect command examples for "Run Command" 🙃<br>
+> …and is primarily meant for Linux-installs using KDE (use [GSConnect](https://extensions.gnome.org/extension/1319/gsconnect) on Gnome)
+
+
 # Table of contents
 | Title | payload action |
 |---|---|
@@ -12,7 +15,23 @@
 | [Screenshot to device / phone](https://github.com/Skrimpton/KDE-Connect-command-examples-for-Run-Command/blob/main/README.md#screenshot-to-device--phone) | `kdeconnect-cli --share`  |
 | [Weather ping](https://github.com/Skrimpton/KDE-Connect-command-examples-for-Run-Command/blob/main/README.md#weather-ping---specify-name-like-above) | `kdeconnect-cli --ping-msg` |
 
-# `qdbus` commands
+
+# Adding commands to run
+1. On PC: Open KDE connect
+2. Select a paired device in the sidebar
+3. Open `Plugin Settings`
+   - If the window is compressed horizontally: Press the `3 vertical dots`-button at the top right hand of the window
+4. In `Plugin Settings`: search for `Execute remote commands`
+5. Click the configuration button of that entry, right side
+6. Click `Add Command…`
+   - If the window is compressed horizontally: Press the `3 vertical dots`-button at the top right hand of the window
+
+<br>
+
+---
+
+<br>
+
 ### Find <ins>*your*</ins> qdbus command
 > if you want to replace `"$(command -v qdbus qdbus{5,6} qdbus-qt{5,6})"`, skipping the subshell
 ```
@@ -258,8 +277,6 @@ name="MY_DEVICE"; place=LONDON; underline="————"; lat="51.50853"; lon="-
 | 1. [api.met.no (developer.yr.no: HOWTO)](https://developer.yr.no/doc/locationforecast/HowTO/)<br><br>2. [yr.no](https://www.yr.no/en) | <img width="265" height="177" alt="Image" src="https://github.com/user-attachments/assets/f0f1b728-7384-4e1f-a269-5c378e616914" /> | <img width="1352" height="380" alt="Image" src="https://github.com/user-attachments/assets/128222d7-2cfc-4ad6-be9f-ac86742774f8" /> |
 
 ¹ Screenshots were taken about an hour apart, that's why the temperature is slightly higher in the example
-
-
 
 
 ## Sources
