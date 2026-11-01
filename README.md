@@ -26,9 +26,9 @@
 6. Click `Add Command…`
    - If the window is compressed horizontally: Press the *More Actions*-button¹
 
-¹ *Usually 3 vertical dots - always top right of window*
-
 <br>
+
+¹ *Usually 3 vertical dots - always top right of window*
 
 ---
 
