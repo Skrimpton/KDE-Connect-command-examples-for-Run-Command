@@ -1,5 +1,5 @@
 > It's yet another list of KDE Connect command examples for "Run Command" 🙃<br>
-> …and is primarily meant for Linux-installs using KDE (use [GSConnect](https://extensions.gnome.org/extension/1319/gsconnect) on Gnome)
+> …and is primarily meant for Linux-installs using KDE
 
 
 # Table of contents
