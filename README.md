@@ -72,8 +72,8 @@ command -v qdbus qdbus{5,6} qdbus-qt{5,6}
 ```
 "$(command -v qdbus qdbus{5,6} qdbus-qt{5,6})" org.kde.keyboard /component/mediacontrol org.kde.kglobalaccel.Component.invokeShortcut mediavolumedown
 ```
-
-## Powerdevil (Power management) : Screen
+# Power management (Powerdevil)
+## Screen
 
 #### Decrease Screen Brightness
 ```
@@ -91,12 +91,17 @@ command -v qdbus qdbus{5,6} qdbus-qt{5,6}
 ```
 "$(command -v qdbus qdbus{5,6} qdbus-qt{5,6})" org.kde.kglobalaccel /component/org_kde_powerdevil org.kde.kglobalaccel.Component.invokeShortcut "Increase Screen Brightness Small"
 ```
+#### Turn Off Screen
+```
+"$(command -v qdbus qdbus{5,6} qdbus-qt{5,6})" org.kde.kglobalaccel /component/org_kde_powerdevil org.kde.kglobalaccel.Component.invokeShortcut "Turn Off Screen"
+```
 
-## Powerdevil (Power management) : PowerOff / PowerDown
 
+## Computer
+PowerOff / PowerDown
 - (Activates "When power button is pressed"-action): [Powerdevil docs](https://docs.kde.org/stable_kf6/en/powerdevil/kcontrol/powerdevil/index.html)
 - Krunner/Kicker (start menu) -> Search: "Power Management"
-- ["PowerOff"/"PowerDown" explained: bug.kde.org](https://bugs.kde.org/show_bug.cgi?id=425915#c4)
+- [PowerOff / PowerDown explained: bug.kde.org](https://bugs.kde.org/show_bug.cgi?id=425915#c4)
 
 #### Power Off 
 ```
@@ -106,10 +111,38 @@ command -v qdbus qdbus{5,6} qdbus-qt{5,6}
 ```
 "$(command -v qdbus qdbus{5,6} qdbus-qt{5,6})" org.kde.kglobalaccel /component/org_kde_powerdevil org.kde.kglobalaccel.Component.invokeShortcut "PowerDown"
 ```
+#### Hibernate
+```
+"$(command -v qdbus qdbus{5,6} qdbus-qt{5,6})" org.kde.kglobalaccel /component/org_kde_powerdevil org.kde.kglobalaccel.Component.invokeShortcut "Hibernate"
+```
+#### Sleep
+```
+"$(command -v qdbus qdbus{5,6} qdbus-qt{5,6})" org.kde.kglobalaccel /component/org_kde_powerdevil org.kde.kglobalaccel.Component.invokeShortcut "Sleep"
+```
+#### Power Profile
+```
+"$(command -v qdbus qdbus{5,6} qdbus-qt{5,6})" org.kde.kglobalaccel /component/org_kde_powerdevil org.kde.kglobalaccel.Component.invokeShortcut "powerProfile"
+```
+
+## Keyboard
+
+#### Increase Keyboard Brightness
+```
+"$(command -v qdbus qdbus{5,6} qdbus-qt{5,6})" org.kde.kglobalaccel /component/org_kde_powerdevil org.kde.kglobalaccel.Component.invokeShortcut "Increase Keyboard Brightness"
+```
+#### Decrease Keyboard Brightness
+```
+"$(command -v qdbus qdbus{5,6} qdbus-qt{5,6})" org.kde.kglobalaccel /component/org_kde_powerdevil org.kde.kglobalaccel.Component.invokeShortcut "Decrease Keyboard Brightness"
+```
+#### Toggle Keyboard Backlight
+```
+"$(command -v qdbus qdbus{5,6} qdbus-qt{5,6})" org.kde.kglobalaccel /component/org_kde_powerdevil org.kde.kglobalaccel.Component.invokeShortcut "Toggle Keyboard Backlight"
+```
+
 
 # Other commands
 
-## Screenshot to phone (Auto-selects top id from active list)
+## Screenshot to device / phone 
 > Can take little while (~5-20 seconds) after screenshot is taken by `spectacle`, before it's received on the phone
 
 Dependencies:
@@ -117,13 +150,19 @@ Dependencies:
 - `kdeconnect-cli`
 - `head`
 
+### Auto-select top id from active list
 #### Screenshot - Fullscreen
 ```
-kid="$(kdeconnect-cli -a --id-only | head -n 1)"; [ -n ${kid} ] && file="/tmp/ScreenshotKDEConnect_$(date "+%Y%m%d_%H%M%S").png"; spectacle -bo "${file}" && while ! [ -f "${file}" ]; do sleep 0.3; done && kdeconnect-cli -d "$kid" --share "${file}"
+kid="$(kdeconnect-cli -a --id-only | head -n 1)"; [ -n ${kid} ] && ( file="/tmp/ScreenshotKDEConnect_$(date "+%Y%m%d_%H%M%S").png"; spectacle -bo "${file}" && while ! [ -f "${file}" ]; do sleep 0.3; done && kdeconnect-cli -d "$kid" --share "${file}" )"
 ```
 #### Screenshot - Active Window
 ```
-kid="$(kdeconnect-cli -a --id-only | head -n 1)"; [ -n ${kid} ] && file="/tmp/ScreenshotKDEConnect_$(date "+%Y%m%d_%H%M%S").png"; spectacle -abo "${file}" && while ! [ -f "${file}" ]; do sleep 0.3; done && kdeconnect-cli -d "$kid" --share "${file}"
+kid="$(kdeconnect-cli -a --id-only | head -n 1)"; [ -n ${kid} ] && ( file="/tmp/ScreenshotKDEConnect_$(date "+%Y%m%d_%H%M%S").png"; spectacle -abo "${file}" && while ! [ -f "${file}" ]; do sleep 0.3; done && kdeconnect-cli -d "$kid" --share "${file}" )"
+```
+
+### Specify name and check if active before sending
+```
+name="MY_DEVICE"; kdeconnect-cli --list-available --name-only | grep -x "${name}" &>/dev/null file="/tmp/ScreenshotKDEConnect_$(date "+%Y%m%d_%H%M%S").png" spectacle -abo "${file}" && while ! [ -f "${file}" ]; do sleep 0.3; done && kdeconnect-cli -n "$name" --share "${file}"
 ```
 
 
