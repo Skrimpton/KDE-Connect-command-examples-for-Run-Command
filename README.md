@@ -23,7 +23,7 @@
 3. Open `Plugin Settings`
    - If the window is compressed horizontally: Press the *More Actions*-button¹ at the top right hand of the window
 4. In `Plugin Settings`: search for `Execute remote commands`
-5. Click the configuration button of that entry, right side
+5. Click the configuration button of that entry: right side
 6. Click `Add Command…`
    - If the window is compressed horizontally: Press the *More Actions*-button¹ at the top right hand of the window
 
