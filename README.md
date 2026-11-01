@@ -274,9 +274,9 @@ name="MY_DEVICE"; place=LONDON; underline="————"; lat="51.50853"; lon="-
   </tr>
 </table>
 
-| Weather sources | Output example¹ | How to find `lat` and `lon` at [yr.no](https://www.yr.no/en) |
+| Weather sources | Output example¹ | How to find `lat` and `lon` at [yr.no (english language)](https://www.yr.no/en) |
 |--- | --- | --- |
-| 1. [api.met.no (developer.yr.no: HOWTO)](https://developer.yr.no/doc/locationforecast/HowTO/)<br><br>2. [yr.no](https://www.yr.no/en) | <img width="265" height="177" alt="Image" src="https://github.com/user-attachments/assets/f0f1b728-7384-4e1f-a269-5c378e616914" /> | <img width="1352" height="380" alt="Image" src="https://github.com/user-attachments/assets/128222d7-2cfc-4ad6-be9f-ac86742774f8" /> |
+| 1. [api.met.no (developer.yr.no: HOWTO)](https://developer.yr.no/doc/locationforecast/HowTO/)<br><br>2. [yr.no (english language)](https://www.yr.no/en) | <img width="265" height="177" alt="Image" src="https://github.com/user-attachments/assets/f0f1b728-7384-4e1f-a269-5c378e616914" /> | <img width="1352" height="380" alt="Image" src="https://github.com/user-attachments/assets/128222d7-2cfc-4ad6-be9f-ac86742774f8" /> |
 
 ¹ *Screenshots were taken about an hour apart, that's why the temperature is slightly higher in the example*
 
