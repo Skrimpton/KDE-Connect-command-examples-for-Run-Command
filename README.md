@@ -7,22 +7,46 @@
 command -v qdbus qdbus{5,6} qdbus-qt{5,6}
 ```
 
-## Volume (PC / System)
+## Sound (PC / System)
 
 #### Volume - Down
 ```
 "$(command -v qdbus qdbus{5,6} qdbus-qt{5,6})" org.kde.kglobalaccel /component/kmix invokeShortcut "decrease_volume"
 ```
+#### Volume - Down (small)
+```
+"$(command -v qdbus qdbus{5,6} qdbus-qt{5,6})" org.kde.kglobalaccel /component/kmix invokeShortcut "decrease_volume_small"
+```
 #### Volume - Up
 ```
 "$(command -v qdbus qdbus{5,6} qdbus-qt{5,6})" org.kde.kglobalaccel /component/kmix invokeShortcut "decrease_volume"
+```
+#### Volume - Up (Small)
+```
+"$(command -v qdbus qdbus{5,6} qdbus-qt{5,6})" org.kde.kglobalaccel /component/kmix invokeShortcut "increase_volume_small"
 ```
 #### Volume - Mute
 ```
 "$(command -v qdbus qdbus{5,6} qdbus-qt{5,6})" org.kde.kglobalaccel /component/kmix invokeShortcut "mute"
 ```
+### Microphone - Up
+```
+"$(command -v qdbus qdbus{5,6} qdbus-qt{5,6})" org.kde.kglobalaccel /component/kmix invokeShortcut "increase_microphone_volume"
+```
+#### Microphone - Down
+```
+"$(command -v qdbus qdbus{5,6} qdbus-qt{5,6})" org.kde.kglobalaccel /component/kmix invokeShortcut "decrease_microphone_volume"
+```
+#### Microphone - Mute
+```
+"$(command -v qdbus qdbus{5,6} qdbus-qt{5,6})" org.kde.kglobalaccel /component/kmix invokeShortcut "mic_mute"
+```
+#### Push to Talk
+```
+"$(command -v qdbus qdbus{5,6} qdbus-qt{5,6})" org.kde.kglobalaccel /component/kmix invokeShortcut "push_to_talk"
+```
 
-## Media 
+## Media Controls
 
 #### Media - Seek Forward
 ```
