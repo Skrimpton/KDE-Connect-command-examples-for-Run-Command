@@ -3,14 +3,14 @@
 | Table of contents |
 |---|
 | [Find *your* qdbus command](https://github.com/Skrimpton/KDE-Connect-command-examples-for-Run-Command/blob/main/README.md#find-your-qdbus-command) |
-| `qdbus` [Sound (PC / System)](https://github.com/Skrimpton/KDE-Connect-command-examples-for-Run-Command/blob/main/README.md#sound-pc--system-qdbus) |
-| `qdbus` [Media Controls](https://github.com/Skrimpton/KDE-Connect-command-examples-for-Run-Command/blob/main/README.md#media-controls-qdbus) |
-| `qdbus` [Power management - Screen](https://github.com/Skrimpton/KDE-Connect-command-examples-for-Run-Command/blob/main/README.md#power-management---screen) |
-| `qdbus` [Power management - Computer](https://github.com/Skrimpton/KDE-Connect-command-examples-for-Run-Command/blob/main/README.md#power-management---computer) |
-| `qdbus` [Power management - Keyboard](https://github.com/Skrimpton/KDE-Connect-command-examples-for-Run-Command/blob/main/README.md#power-management---keyboard-lights) |
+| [`qdbus` Sound (PC / System)](https://github.com/Skrimpton/KDE-Connect-command-examples-for-Run-Command/blob/main/README.md#sound-pc--system-qdbus) |
+| [`qdbus` Media Controls](https://github.com/Skrimpton/KDE-Connect-command-examples-for-Run-Command/blob/main/README.md#media-controls-qdbus) |
+| [`qdbus` Power management - Screen](https://github.com/Skrimpton/KDE-Connect-command-examples-for-Run-Command/blob/main/README.md#power-management---screen) |
+| [`qdbus` Power management - Computer](https://github.com/Skrimpton/KDE-Connect-command-examples-for-Run-Command/blob/main/README.md#power-management---computer) |
+| [`qdbus` Power management - Keyboard](https://github.com/Skrimpton/KDE-Connect-command-examples-for-Run-Command/blob/main/README.md#power-management---keyboard-lights) |
 | [Find available devices using `kdeconnect-cli`](https://github.com/Skrimpton/KDE-Connect-command-examples-for-Run-Command/blob/main/README.md#find-available-devices-using-kdeconnect-cli) |
-| [Screenshot to device / phone](https://github.com/Skrimpton/KDE-Connect-command-examples-for-Run-Command/blob/main/README.md#screenshot-to-device--phone) |
-| [Weather ping](https://github.com/Skrimpton/KDE-Connect-command-examples-for-Run-Command/blob/main/README.md#weather-ping---specify-name-like-above) |
+| [`kdeconnect-cli` Screenshot to device / phone](https://github.com/Skrimpton/KDE-Connect-command-examples-for-Run-Command/blob/main/README.md#screenshot-to-device--phone) |
+| [ `kdeconnect-cli` Weather ping](https://github.com/Skrimpton/KDE-Connect-command-examples-for-Run-Command/blob/main/README.md#weather-ping---specify-name-like-above) |
 
 # `qdbus` commands
 ### Find <ins>*your*</ins> qdbus command
@@ -272,11 +272,11 @@ name="MY_DEVICE"; place=LONDON; underline="————"; lat="51.50853"; lon="-
 | Table of contents |
 |---|
 | [Find *your* qdbus command](https://github.com/Skrimpton/KDE-Connect-command-examples-for-Run-Command/blob/main/README.md#find-your-qdbus-command) |
-| `qdbus` [Sound (PC / System)](https://github.com/Skrimpton/KDE-Connect-command-examples-for-Run-Command/blob/main/README.md#sound-pc--system-qdbus) |
-| `qdbus` [Media Controls](https://github.com/Skrimpton/KDE-Connect-command-examples-for-Run-Command/blob/main/README.md#media-controls-qdbus) |
-| `qdbus` [Power management - Screen](https://github.com/Skrimpton/KDE-Connect-command-examples-for-Run-Command/blob/main/README.md#power-management---screen) |
-| `qdbus` [Power management - Computer](https://github.com/Skrimpton/KDE-Connect-command-examples-for-Run-Command/blob/main/README.md#power-management---computer) |
-| `qdbus` [Power management - Keyboard](https://github.com/Skrimpton/KDE-Connect-command-examples-for-Run-Command/blob/main/README.md#power-management---keyboard-lights) |
+| [`qdbus` Sound (PC / System)](https://github.com/Skrimpton/KDE-Connect-command-examples-for-Run-Command/blob/main/README.md#sound-pc--system-qdbus) |
+| [`qdbus` Media Controls](https://github.com/Skrimpton/KDE-Connect-command-examples-for-Run-Command/blob/main/README.md#media-controls-qdbus) |
+| [`qdbus` Power management - Screen](https://github.com/Skrimpton/KDE-Connect-command-examples-for-Run-Command/blob/main/README.md#power-management---screen) |
+| [`qdbus` Power management - Computer](https://github.com/Skrimpton/KDE-Connect-command-examples-for-Run-Command/blob/main/README.md#power-management---computer) |
+| [`qdbus` Power management - Keyboard](https://github.com/Skrimpton/KDE-Connect-command-examples-for-Run-Command/blob/main/README.md#power-management---keyboard-lights) |
 | [Find available devices using `kdeconnect-cli`](https://github.com/Skrimpton/KDE-Connect-command-examples-for-Run-Command/blob/main/README.md#find-available-devices-using-kdeconnect-cli) |
-| [Screenshot to device / phone](https://github.com/Skrimpton/KDE-Connect-command-examples-for-Run-Command/blob/main/README.md#screenshot-to-device--phone) |
-| [Weather ping](https://github.com/Skrimpton/KDE-Connect-command-examples-for-Run-Command/blob/main/README.md#weather-ping---specify-name-like-above) |
+| [`kdeconnect-cli` Screenshot to device / phone](https://github.com/Skrimpton/KDE-Connect-command-examples-for-Run-Command/blob/main/README.md#screenshot-to-device--phone) |
+| [ `kdeconnect-cli` Weather ping](https://github.com/Skrimpton/KDE-Connect-command-examples-for-Run-Command/blob/main/README.md#weather-ping---specify-name-like-above) |
