@@ -90,5 +90,5 @@ kid="$(kdeconnect-cli -a --id-only | head -n 1)"; [ -n ${kid} ] && file="/tmp/Sc
 ```
 #### Screenshot - Active Window
 ```
-kid="$(kdeconnect-cli -a --id-only | head -n 1)"; [ -n ${kid} ] && file="/tmp/ScreenshotKDEConnect_$(date "+%Y%m%d_%H%M%S").png"; spectacle -boa "${file}" && while ! [ -f "${file}" ]; do sleep 0.3; done && kdeconnect-cli -d "$kid" --share "${file}"
+kid="$(kdeconnect-cli -a --id-only | head -n 1)"; [ -n ${kid} ] && file="/tmp/ScreenshotKDEConnect_$(date "+%Y%m%d_%H%M%S").png"; spectacle -abo "${file}" && while ! [ -f "${file}" ]; do sleep 0.3; done && kdeconnect-cli -d "$kid" --share "${file}"
 ```
