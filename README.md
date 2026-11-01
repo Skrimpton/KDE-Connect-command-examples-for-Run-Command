@@ -1,7 +1,10 @@
 # KDE-Connect-command-examples-for-Run-Command
 > It's KDE Connect command examples for "Run Command" 🙃
 
-- You can replace `qdbus6` with your own: `command -v qdbus qdbus{5,6} qdbus-qt{5,6}`
+- You can replace `qdbus6` with your own: 
+```
+command -v qdbus qdbus{5,6} qdbus-qt{5,6}
+```
 
 
 ## Sources
