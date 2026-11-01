@@ -6,7 +6,7 @@
 
 ## Sources
 1. [userbase.kde.org - KDE UserBase wiki](https://userbase.kde.org/KDE_Connect/Tutorials/Useful_commands)
-
+1. [Guilherme (GuinuxBR)](https://github.com/guinuxbr/KDEConnect-commands/blob/main/commands.md)
 
 ## Volume (PC / System)
 #### Volume - Down
