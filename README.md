@@ -2,7 +2,7 @@
 
 # `qdbus` commands
 ### Find <ins>*your*</ins> qdbus command
-- if you want to replace `"$(command -v qdbus qdbus{5,6} qdbus-qt{5,6})"`, skipping the subshell
+> if you want to replace `"$(command -v qdbus qdbus{5,6} qdbus-qt{5,6})"`, skipping the subshell
 ```
 command -v qdbus qdbus{5,6} qdbus-qt{5,6}
 ```
