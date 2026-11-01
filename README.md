@@ -197,23 +197,18 @@ kid="MY_DEVICE"; kdeconnect-cli --list-available --id-only | grep -x "${kid}" >/
 name="moto"; place=LONDON; underline="————"; lat="51.50853"; lon="-0.12574"; url="https://api.met.no/weatherapi/locationforecast/2.0/compact?lat=${lat}&lon=${lon}"; weather="$(curl -s "${url}" | jq -r '.properties.timeseries[0] | "Time: \(.time)\nTemp: \(.data.instant.details.air_temperature)°C\nWeather: \(.data.next_1_hours.summary.symbol_code)\nPrecipitation: \(.data.next_1_hours.details.precipitation_amount)mm"')"; kdeconnect-cli --list-available --name-only | grep -x "${name}" >/dev/null && ( kdeconnect-cli -n "${name}" --ping-msg "$(printf '%s\n%s\n%s' "${place}" "${underline}" "${weather}")" )
 ```
 
-Weather source(s) 
->  1. [api.met.no (developer.yr.no: HOWTO)](https://developer.yr.no/doc/locationforecast/HowTO/)
->  2. [yr.no](https://www.yr.no/en)
-
-Output example
-
-<img width="265" height="177" alt="Image" src="https://github.com/user-attachments/assets/f0f1b728-7384-4e1f-a269-5c378e616914" />
-
-
-### How to find `lat` and `lon` at [yr.no](https://www.yr.no/en)
-<img width="1352" height="380" alt="Image" src="https://github.com/user-attachments/assets/128222d7-2cfc-4ad6-be9f-ac86742774f8" />
-
 Dependencies
-- `curl`
+- `curl` 
 - `jq`
-- `kdeconntect-cli`
+- `kdeconnect-cli`
 - `printf`
+
+| Weather sources | Output example | How to find `lat` and `lon` at [yr.no](https://www.yr.no/en) |
+| --- | --- | --- |
+| 1. [api.met.no (developer.yr.no: HOWTO)](https://developer.yr.no/doc/locationforecast/HowTO/)<br><br>2. [yr.no](https://www.yr.no/en) | <img width="265" height="177" alt="Image" src="https://github.com/user-attachments/assets/f0f1b728-7384-4e1f-a269-5c378e616914" /> | <img width="1352" height="380" alt="Image" src="https://github.com/user-attachments/assets/128222d7-2cfc-4ad6-be9f-ac86742774f8" /> |
+
+
+
 
 
 ## Sources
