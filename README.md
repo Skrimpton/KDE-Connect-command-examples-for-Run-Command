@@ -109,6 +109,7 @@ command -v qdbus qdbus{5,6} qdbus-qt{5,6}
 <br>
 
 # Power management (Powerdevil) [`qdbus`]
+
 ## Power management - Screen
 
 #### Decrease Screen Brightness
@@ -161,6 +162,7 @@ PowerOff / PowerDown
 ```
 "$(command -v qdbus qdbus{5,6} qdbus-qt{5,6})" org.kde.kglobalaccel /component/org_kde_powerdevil org.kde.kglobalaccel.Component.invokeShortcut "powerProfile"
 ```
+<br>
 
 ## Power management - Keyboard lights
 
