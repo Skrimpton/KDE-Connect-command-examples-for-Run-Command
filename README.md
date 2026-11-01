@@ -103,7 +103,7 @@ command -v qdbus qdbus{5,6} qdbus-qt{5,6}
 PowerOff / PowerDown
 - (Activates "When power button is pressed"-action): [Powerdevil docs](https://docs.kde.org/stable_kf6/en/powerdevil/kcontrol/powerdevil/index.html)
 - Krunner/Kicker (start menu) -> Search: `Power Management`
-- Krunner/Kicker (start menu) -> Search: `Shortcuts` -> Click `[System Settings] Shortcuts [Configure Keyboard Shortcuts]` -> [(Middle) Sidebar, under `System Services`]: `Power Management`
+- Krunner/Kicker (start menu) -> Search: `Shortcuts` -> Click: `[System Settings] Shortcuts [Configure Keyboard Shortcuts]` -> [(Middle) Sidebar, under `System Services`] Click: `Power Management`
 - [PowerOff / PowerDown explained: bug.kde.org](https://bugs.kde.org/show_bug.cgi?id=425915#c4)
 
 #### Power Off 
