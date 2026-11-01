@@ -29,7 +29,7 @@ command -v qdbus qdbus{5,6} qdbus-qt{5,6}
 ```
 "$(command -v qdbus qdbus{5,6} qdbus-qt{5,6})" org.kde.kglobalaccel /component/kmix invokeShortcut "mute"
 ```
-### Microphone - Up
+#### Microphone - Up
 ```
 "$(command -v qdbus qdbus{5,6} qdbus-qt{5,6})" org.kde.kglobalaccel /component/kmix invokeShortcut "increase_microphone_volume"
 ```
