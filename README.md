@@ -1,6 +1,6 @@
-# KDE-Connect-command-examples-for-Run-Command
-> It's KDE Connect command examples for "Run Command" 🙃
+> It's yet another KDE Connect command examples for "Run Command" 🙃
 
+# `qdbus` commands
 ### Find your qdbus command
 ```
 command -v qdbus qdbus{5,6} qdbus-qt{5,6}
@@ -106,9 +106,10 @@ qdbus6 org.kde.kglobalaccel /component/org_kde_powerdevil org.kde.kglobalaccel.C
 qdbus6 org.kde.kglobalaccel /component/org_kde_powerdevil org.kde.kglobalaccel.Component.invokeShortcut "PowerDown"
 ```
 
+# Other commands
 
 ## Screenshot to phone (Auto-selects top id from active list)
-##### Dependencies:
+Dependencies:
 - `spectacle`
 - `kdeconnect-cli`
 - `head`
