@@ -175,6 +175,7 @@ PowerOff / PowerDown
 ```
 kdeconnect-cli --list-available
 ```
+<br>
 
 ## Screenshot to device / phone
 Inspired by and building on: [Useful_commands#Screen_capture: kde userbase wiki](https://userbase.kde.org/KDE_Connect/Tutorials/Useful_commands#Screen_capture)
@@ -216,6 +217,7 @@ name="MY_DEVICE"; kdeconnect-cli --list-available --name-only | grep -x "${name}
 ```
 name="MY_DEVICE"; kdeconnect-cli --list-available --name-only | grep -x "${name}" >/dev/null && ( file="/tmp/ScreenshotKDEConnect_$(date "+%Y%m%d_%H%M%S").png"; spectacle -abo "${file}" && while ! [ -f "${file}" ]; do sleep 0.3; done && kdeconnect-cli -n "${name}" --share "${file}" )
 ```
+<br>
 
 ## Weather ping - (Using <ins>name</ins>, like above)
 ```
