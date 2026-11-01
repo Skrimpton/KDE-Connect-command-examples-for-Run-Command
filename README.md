@@ -1,4 +1,4 @@
-> It's yet another KDE Connect command examples for "Run Command" 🙃
+> It's yet another list of KDE Connect command examples for "Run Command" 🙃
 
 # `qdbus` commands
 ### Find your qdbus command
