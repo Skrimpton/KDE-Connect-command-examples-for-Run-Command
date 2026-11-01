@@ -207,7 +207,7 @@ kdeconnect-cli --list-available
 Inspired by and building on: [Useful_commands#Screen_capture: kde userbase wiki](https://userbase.kde.org/KDE_Connect/Tutorials/Useful_commands#Screen_capture)
 > Can take little while (~5-20 seconds) after screenshot is taken by `spectacle`, before it's received on the phone
 
-### Auto-select top ID from active list and validate ID is active before sending
+### Auto-select top ID from active list and validate ID is active before capture and sending
 #### Screenshot - Fullscreen
 ```
 kid="$(kdeconnect-cli -a --id-only | head -n 1)";  kdeconnect-cli --list-available --id-only | grep -x "${kid}" >/dev/null && ( file="/tmp/ScreenshotKDEConnect_$(date "+%Y%m%d_%H%M%S").png"; spectacle -bo "${file}" && while ! [ -f "${file}" ]; do sleep 0.3; done && kdeconnect-cli -d "$kid" --share "${file}" )
