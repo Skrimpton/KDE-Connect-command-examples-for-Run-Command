@@ -153,16 +153,16 @@ Dependencies:
 ### Auto-select top id from active list
 #### Screenshot - Fullscreen
 ```
-kid="$(kdeconnect-cli -a --id-only | head -n 1)"; [ -n ${kid} ] && ( file="/tmp/ScreenshotKDEConnect_$(date "+%Y%m%d_%H%M%S").png"; spectacle -bo "${file}" && while ! [ -f "${file}" ]; do sleep 0.3; done && kdeconnect-cli -d "$kid" --share "${file}" )"
+kid="$(kdeconnect-cli -a --id-only | head -n 1)";  kdeconnect-cli --list-available --id-only | grep -x "${kid}" >/dev/null && ( file="/tmp/ScreenshotKDEConnect_$(date "+%Y%m%d_%H%M%S").png"; spectacle -bo "${file}" && while ! [ -f "${file}" ]; do sleep 0.3; done && kdeconnect-cli -d "$kid" --share "${file}" )
 ```
 #### Screenshot - Active Window
 ```
-kid="$(kdeconnect-cli -a --id-only | head -n 1)"; [ -n ${kid} ] && ( file="/tmp/ScreenshotKDEConnect_$(date "+%Y%m%d_%H%M%S").png"; spectacle -abo "${file}" && while ! [ -f "${file}" ]; do sleep 0.3; done && kdeconnect-cli -d "$kid" --share "${file}" )"
+kid="$(kdeconnect-cli -a --id-only | head -n 1)";  kdeconnect-cli --list-available --id-only | grep -x "${kid}" >/dev/null && ( file="/tmp/ScreenshotKDEConnect_$(date "+%Y%m%d_%H%M%S").png"; spectacle -abo "${file}" && while ! [ -f "${file}" ]; do sleep 0.3; done && kdeconnect-cli -d "$kid" --share "${file}" )
 ```
 
 ### Specify name and check if active before sending
 ```
-name="MY_DEVICE"; kdeconnect-cli --list-available --name-only | grep -x "${name}" &>/dev/null file="/tmp/ScreenshotKDEConnect_$(date "+%Y%m%d_%H%M%S").png" spectacle -abo "${file}" && while ! [ -f "${file}" ]; do sleep 0.3; done && kdeconnect-cli -n "$name" --share "${file}"
+name="MY_DEVICE"; kdeconnect-cli --list-available --name-only | grep -x "${name}" &>/dev/null && ( file="/tmp/ScreenshotKDEConnect_$(date "+%Y%m%d_%H%M%S").png" spectacle -abo "${file}" && while ! [ -f "${file}" ]; do sleep 0.3; done && kdeconnect-cli -n "$name" --share "${file}" )
 ```
 
 
