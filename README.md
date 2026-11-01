@@ -1,5 +1,11 @@
 > It's yet another list of KDE Connect command examples for "Run Command" 🙃
 
+| Table of contents |
+|---|
+| [Sound (PC / System) [`qdbus`]](https://github.com/Skrimpton/KDE-Connect-command-examples-for-Run-Command/blob/main/README.md#sound-pc--system-qdbus) |
+| [Media Controls [`qdbus`]](https://github.com/Skrimpton/KDE-Connect-command-examples-for-Run-Command/blob/main/README.md#media-controls-qdbus) |
+
+
 # `qdbus` commands
 ### Find <ins>*your*</ins> qdbus command
 > if you want to replace `"$(command -v qdbus qdbus{5,6} qdbus-qt{5,6})"`, skipping the subshell
