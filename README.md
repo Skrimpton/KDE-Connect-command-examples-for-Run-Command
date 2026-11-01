@@ -21,13 +21,13 @@
 1. On PC: Open KDE connect
 2. Select a paired device in the sidebar
 3. Open `Plugin Settings`
-   - If the window is compressed horizontally: Press the *More Actions*-button¹ (top right)
+   - If the window is compressed horizontally: Press the *More Actions*-button¹
 4. In `Plugin Settings`: search for `Execute remote commands`
 5. Click the configuration-button of that entry row: right-hand side
 6. Click `Add Command…`
-   - If the window is compressed horizontally: Press the *More Actions*-button¹ (top right)
+   - If the window is compressed horizontally: Press the *More Actions*-button¹
 
-¹ *Usually 3 vertical dots*
+¹ *Usually 3 vertical dots - always top right of window*
 
 <br>
 
