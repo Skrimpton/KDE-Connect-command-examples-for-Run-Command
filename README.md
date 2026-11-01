@@ -291,6 +291,7 @@ name="MY_DEVICE"; place=LONDON; underline="————"; lat="51.50853"; lon="-
 # Table of contents
 | Title | payload action |
 |---|---|
+| [Adding commands to run](https://github.com/Skrimpton/KDE-Connect-command-examples-for-Run-Command/blob/main/README.md#adding-commands-to-run) |
 | [Find *your* qdbus command](https://github.com/Skrimpton/KDE-Connect-command-examples-for-Run-Command/blob/main/README.md#find-your-qdbus-command) |
 | [Sound (PC / System)](https://github.com/Skrimpton/KDE-Connect-command-examples-for-Run-Command/blob/main/README.md#sound-pc--system-qdbus) | `qdbus` |
 | [Media Controls](https://github.com/Skrimpton/KDE-Connect-command-examples-for-Run-Command/blob/main/README.md#media-controls-qdbus) | `qdbus` |
@@ -301,4 +302,3 @@ name="MY_DEVICE"; place=LONDON; underline="————"; lat="51.50853"; lon="-
 | [Screenshot to device / phone](https://github.com/Skrimpton/KDE-Connect-command-examples-for-Run-Command/blob/main/README.md#screenshot-to-device--phone) | `kdeconnect-cli --share`  |
 | [Weather ping](https://github.com/Skrimpton/KDE-Connect-command-examples-for-Run-Command/blob/main/README.md#weather-ping---specify-name-like-above) | `kdeconnect-cli --ping-msg` |
 
-###### [Back to top](https://github.com/Skrimpton/KDE-Connect-command-examples-for-Run-Command/blob/main/README.md#table-of-contents)
