@@ -143,6 +143,7 @@ PowerOff / PowerDown
 # Other commands
 
 ## Screenshot to device / phone
+> Inspired by and building on: [Useful_commands#Screen_capture: kde userbase wiki](https://userbase.kde.org/KDE_Connect/Tutorials/Useful_commands#Screen_capture)
 > Can take little while (~5-20 seconds) after screenshot is taken by `spectacle`, before it's received on the phone
 
 Dependencies:
@@ -151,7 +152,6 @@ Dependencies:
 - `grep`
 - `head`
 
-Inspired by and building on: [Useful_commands#Screen_capture: kde userbase wiki](https://userbase.kde.org/KDE_Connect/Tutorials/Useful_commands#Screen_capture)
 
 ### Auto-select top id from active list and validate before sending
 #### Screenshot - Fullscreen
