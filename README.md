@@ -198,7 +198,7 @@ name="moto"; place=LONDON; underline="————"; lat="51.50853"; lon="-0.125
 ```
 
 Weather source(s) 
->  1. [api.met.no: developer.yr.no: HOWTO](https://developer.yr.no/doc/locationforecast/HowTO/)
+>  1. [api.met.no (developer.yr.no: HOWTO)](https://developer.yr.no/doc/locationforecast/HowTO/)
 >  2. [yr.no](https://www.yr.no/en)
 
 Output example
