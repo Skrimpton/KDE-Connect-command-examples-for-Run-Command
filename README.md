@@ -22,7 +22,7 @@ command -v qdbus qdbus{5,6} qdbus-qt{5,6}
 "$(command -v qdbus qdbus{5,6} qdbus-qt{5,6})" org.kde.kglobalaccel /component/kmix invokeShortcut "mute"
 ```
 
-## Media
+## Media 
 
 #### Media - Seek Forward
 ```
@@ -72,7 +72,9 @@ command -v qdbus qdbus{5,6} qdbus-qt{5,6}
 ```
 "$(command -v qdbus qdbus{5,6} qdbus-qt{5,6})" org.kde.keyboard /component/mediacontrol org.kde.kglobalaccel.Component.invokeShortcut mediavolumedown
 ```
-# Power management (Powerdevil)
+
+
+# Power management (Powerdevil) [`qdbus`]
 ## Screen
 
 #### Decrease Screen Brightness
@@ -100,7 +102,8 @@ command -v qdbus qdbus{5,6} qdbus-qt{5,6}
 ## Computer
 PowerOff / PowerDown
 - (Activates "When power button is pressed"-action): [Powerdevil docs](https://docs.kde.org/stable_kf6/en/powerdevil/kcontrol/powerdevil/index.html)
-- Krunner/Kicker (start menu) -> Search: "Power Management"
+- Krunner/Kicker (start menu) -> Search: `Power Management`
+- Krunner/Kicker (start menu) -> Search: `Shortcuts` -> Click `[System Settings] Shortcuts [Configure Keyboard Shortcuts]` -> [(Middle) Sidebar, under `System Services`]: `Power Management`
 - [PowerOff / PowerDown explained: bug.kde.org](https://bugs.kde.org/show_bug.cgi?id=425915#c4)
 
 #### Power Off 
@@ -153,7 +156,7 @@ Dependencies:
 - `head`
 
 
-### Auto-select top id from active list and validate before sending
+### Auto-select top ID from active list and validate ID is active before sending
 #### Screenshot - Fullscreen
 ```
 kid="$(kdeconnect-cli -a --id-only | head -n 1)";  kdeconnect-cli --list-available --id-only | grep -x "${kid}" >/dev/null && ( file="/tmp/ScreenshotKDEConnect_$(date "+%Y%m%d_%H%M%S").png"; spectacle -bo "${file}" && while ! [ -f "${file}" ]; do sleep 0.3; done && kdeconnect-cli -d "$kid" --share "${file}" )
@@ -163,7 +166,7 @@ kid="$(kdeconnect-cli -a --id-only | head -n 1)";  kdeconnect-cli --list-availab
 kid="$(kdeconnect-cli -a --id-only | head -n 1)";  kdeconnect-cli --list-available --id-only | grep -x "${kid}" >/dev/null && ( file="/tmp/ScreenshotKDEConnect_$(date "+%Y%m%d_%H%M%S").png"; spectacle -abo "${file}" && while ! [ -f "${file}" ]; do sleep 0.3; done && kdeconnect-cli -d "$kid" --share "${file}" )
 ```
 
-### Specify <ins>name</ins> and check if active before sending
+### Specify <ins>name</ins> and validate <ins>name</ins> is active before sending
 #### Screenshot - Fullscreen
 ```
 name="MY_DEVICE"; kdeconnect-cli --list-available --name-only | grep -x "${name}" &>/dev/null && ( file="/tmp/ScreenshotKDEConnect_$(date "+%Y%m%d_%H%M%S").png"; spectacle -bo "${file}" && while ! [ -f "${file}" ]; do sleep 0.3; done && kdeconnect-cli -n "$name" --share "${file}" )
@@ -174,7 +177,7 @@ name="MY_DEVICE"; kdeconnect-cli --list-available --name-only | grep -x "${name}
 ```
 
 
-### Specify <ins>ID</ins> and check if active before sending
+### Specify <ins>ID</ins> and validate <ins>ID</ins> is active before sending
 #### Screenshot - Fullscreen
 ```
 kid="MY_DEVICE"; kdeconnect-cli --list-available --id-only | grep -x "${kid}" &>/dev/null && ( file="/tmp/ScreenshotKDEConnect_$(date "+%Y%m%d_%H%M%S").png"; spectacle -bo "${file}" && while ! [ -f "${file}" ]; do sleep 0.3; done && kdeconnect-cli -d "${kid}" --share "${file}" )
