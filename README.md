@@ -1,7 +1,7 @@
 > It's yet another list of KDE Connect command examples for "Run Command" 🙃
 
 # `qdbus` commands
-### Find your qdbus command
+### Find *your* qdbus command
 - if you want to replace `"$(command -v qdbus qdbus{5,6} qdbus-qt{5,6})"`
 ```
 command -v qdbus qdbus{5,6} qdbus-qt{5,6}
@@ -110,10 +110,13 @@ qdbus6 org.kde.kglobalaccel /component/org_kde_powerdevil org.kde.kglobalaccel.C
 # Other commands
 
 ## Screenshot to phone (Auto-selects top id from active list)
+> Can take little while (~5-20 seconds) after screenshot is taken by spectacle, before it's received on the phone
+
 Dependencies:
 - `spectacle`
 - `kdeconnect-cli`
 - `head`
+
 #### Screenshot - Fullscreen
 ```
 kid="$(kdeconnect-cli -a --id-only | head -n 1)"; [ -n ${kid} ] && file="/tmp/ScreenshotKDEConnect_$(date "+%Y%m%d_%H%M%S").png"; spectacle -bo "${file}" && while ! [ -f "${file}" ]; do sleep 0.3; done && kdeconnect-cli -d "$kid" --share "${file}"
