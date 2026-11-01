@@ -4,7 +4,9 @@
 |---|
 | [Sound (PC / System) [`qdbus`]](https://github.com/Skrimpton/KDE-Connect-command-examples-for-Run-Command/blob/main/README.md#sound-pc--system-qdbus) |
 | [Media Controls [`qdbus`]](https://github.com/Skrimpton/KDE-Connect-command-examples-for-Run-Command/blob/main/README.md#media-controls-qdbus) |
-
+| [Power management - Screen](https://github.com/Skrimpton/KDE-Connect-command-examples-for-Run-Command/blob/main/README.md#power-management---screen) |
+| [Power management - Computer](https://github.com/Skrimpton/KDE-Connect-command-examples-for-Run-Command/blob/main/README.md#power-management---computer) |
+| [Power management - Keyboard lights]() |
 
 # `qdbus` commands
 ### Find <ins>*your*</ins> qdbus command
@@ -160,7 +162,7 @@ PowerOff / PowerDown
 "$(command -v qdbus qdbus{5,6} qdbus-qt{5,6})" org.kde.kglobalaccel /component/org_kde_powerdevil org.kde.kglobalaccel.Component.invokeShortcut "powerProfile"
 ```
 
-## Power management - Keyboard
+## Power management - Keyboard lights
 
 #### Increase Keyboard Brightness
 ```
