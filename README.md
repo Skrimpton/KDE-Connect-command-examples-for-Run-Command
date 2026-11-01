@@ -1,8 +1,8 @@
 > It's yet another list of KDE Connect command examples for "Run Command" 🙃
 
 # `qdbus` commands
-### Find *your* qdbus command
-- if you want to replace `"$(command -v qdbus qdbus{5,6} qdbus-qt{5,6})"`
+### Find <ins>*your*</ins> qdbus command
+- if you want to replace `"$(command -v qdbus qdbus{5,6} qdbus-qt{5,6})"`, skipping the subshell
 ```
 command -v qdbus qdbus{5,6} qdbus-qt{5,6}
 ```
@@ -100,17 +100,17 @@ command -v qdbus qdbus{5,6} qdbus-qt{5,6}
 
 #### Power Off 
 ```
-qdbus6 org.kde.kglobalaccel /component/org_kde_powerdevil org.kde.kglobalaccel.Component.invokeShortcut "PowerOff"
+"$(command -v qdbus qdbus{5,6} qdbus-qt{5,6})" org.kde.kglobalaccel /component/org_kde_powerdevil org.kde.kglobalaccel.Component.invokeShortcut "PowerOff"
 ```
 #### Power Down
 ```
-qdbus6 org.kde.kglobalaccel /component/org_kde_powerdevil org.kde.kglobalaccel.Component.invokeShortcut "PowerDown"
+"$(command -v qdbus qdbus{5,6} qdbus-qt{5,6})" org.kde.kglobalaccel /component/org_kde_powerdevil org.kde.kglobalaccel.Component.invokeShortcut "PowerDown"
 ```
 
 # Other commands
 
 ## Screenshot to phone (Auto-selects top id from active list)
-> Can take little while (~5-20 seconds) after screenshot is taken by spectacle, before it's received on the phone
+> Can take little while (~5-20 seconds) after screenshot is taken by `spectacle`, before it's received on the phone
 
 Dependencies:
 - `spectacle`
