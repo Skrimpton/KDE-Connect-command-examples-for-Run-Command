@@ -1,15 +1,10 @@
 # KDE-Connect-command-examples-for-Run-Command
 > It's KDE Connect command examples for "Run Command" 🙃
 
-- You can replace `qdbus6` with your own: 
+## Find your qdbus version
 ```
 command -v qdbus qdbus{5,6} qdbus-qt{5,6}
 ```
-
-
-## Sources
-1. [userbase.kde.org - KDE UserBase wiki](https://userbase.kde.org/KDE_Connect/Tutorials/Useful_commands)
-1. [Guilherme (GuinuxBR)](https://github.com/guinuxbr/KDEConnect-commands/blob/main/commands.md)
 
 ## Volume (PC / System)
 
@@ -125,3 +120,8 @@ kid="$(kdeconnect-cli -a --id-only | head -n 1)"; [ -n ${kid} ] && file="/tmp/Sc
 ```
 kid="$(kdeconnect-cli -a --id-only | head -n 1)"; [ -n ${kid} ] && file="/tmp/ScreenshotKDEConnect_$(date "+%Y%m%d_%H%M%S").png"; spectacle -abo "${file}" && while ! [ -f "${file}" ]; do sleep 0.3; done && kdeconnect-cli -d "$kid" --share "${file}"
 ```
+
+
+## Sources
+1. [userbase.kde.org - KDE UserBase wiki](https://userbase.kde.org/KDE_Connect/Tutorials/Useful_commands)
+1. [Guilherme (GuinuxBR)](https://github.com/guinuxbr/KDEConnect-commands/blob/main/commands.md)
