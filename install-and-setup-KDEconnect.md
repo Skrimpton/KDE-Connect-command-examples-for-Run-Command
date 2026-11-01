@@ -1,4 +1,5 @@
-# Get KDEconnect
+# Get KDEconnect - *use [GSConnect](https://extensions.gnome.org/extension/1319/gsconnect) on Gnome*
+
 ### Get : PHONE
 - [Google play](https://play.google.com/store/apps/details?id=org.kde.kdeconnect_tp)
 - [Fdroid](https://f-droid.org/packages/org.kde.kdeconnect_tp/) 
