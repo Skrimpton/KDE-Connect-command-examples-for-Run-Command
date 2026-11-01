@@ -6,7 +6,8 @@
 | [Media Controls [`qdbus`]](https://github.com/Skrimpton/KDE-Connect-command-examples-for-Run-Command/blob/main/README.md#media-controls-qdbus) |
 | [Power management - Screen](https://github.com/Skrimpton/KDE-Connect-command-examples-for-Run-Command/blob/main/README.md#power-management---screen) |
 | [Power management - Computer](https://github.com/Skrimpton/KDE-Connect-command-examples-for-Run-Command/blob/main/README.md#power-management---computer) |
-| [Power management - Keyboard lights]() |
+| [Power management - Keyboard lights](https://github.com/Skrimpton/KDE-Connect-command-examples-for-Run-Command/blob/main/README.md#power-management---keyboard-lights) |
+| []() |
 
 # `qdbus` commands
 ### Find <ins>*your*</ins> qdbus command
@@ -109,6 +110,8 @@ command -v qdbus qdbus{5,6} qdbus-qt{5,6}
 <br>
 
 # Power management (Powerdevil) [`qdbus`]
+
+<br>
 
 ## Power management - Screen
 
