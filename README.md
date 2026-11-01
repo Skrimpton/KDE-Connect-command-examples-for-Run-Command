@@ -1,7 +1,8 @@
 > It's yet another list of KDE Connect command examples for "Run Command" 🙃
 
 # `qdbus` commands
-### Find your qdbus command if you want to replace `"$(command -v qdbus qdbus{5,6} qdbus-qt{5,6})"`
+### Find your qdbus command
+- if you want to replace `"$(command -v qdbus qdbus{5,6} qdbus-qt{5,6})"`
 ```
 command -v qdbus qdbus{5,6} qdbus-qt{5,6}
 ```
