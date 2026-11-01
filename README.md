@@ -41,7 +41,7 @@ command -v qdbus qdbus{5,6} qdbus-qt{5,6}
 ```
 "$(command -v qdbus qdbus{5,6} qdbus-qt{5,6})" org.kde.kglobalaccel /component/kmix invokeShortcut "mic_mute"
 ```
-#### Push to Talk
+#### Microphone - Push to Talk
 ```
 "$(command -v qdbus qdbus{5,6} qdbus-qt{5,6})" org.kde.kglobalaccel /component/kmix invokeShortcut "push_to_talk"
 ```
