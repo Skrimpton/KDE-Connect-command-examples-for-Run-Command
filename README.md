@@ -7,7 +7,7 @@
 command -v qdbus qdbus{5,6} qdbus-qt{5,6}
 ```
 
-## Sound (PC / System)
+# Sound (PC / System)
 
 #### Volume - Down
 ```
@@ -46,7 +46,7 @@ command -v qdbus qdbus{5,6} qdbus-qt{5,6}
 "$(command -v qdbus qdbus{5,6} qdbus-qt{5,6})" org.kde.kglobalaccel /component/kmix invokeShortcut "push_to_talk"
 ```
 
-## Media Controls
+# Media Controls
 
 #### Media - Seek Forward
 ```
