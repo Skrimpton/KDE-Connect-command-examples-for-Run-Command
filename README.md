@@ -148,6 +148,7 @@ PowerOff / PowerDown
 Dependencies:
 - `spectacle`
 - `kdeconnect-cli`
+- `grep`
 - `head`
 
 ### Auto-select top id from active list
