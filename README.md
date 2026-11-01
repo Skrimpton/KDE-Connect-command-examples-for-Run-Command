@@ -102,9 +102,10 @@ command -v qdbus qdbus{5,6} qdbus-qt{5,6}
 ## Computer
 PowerOff / PowerDown
 - (Activates "When power button is pressed"-action): [Powerdevil docs](https://docs.kde.org/stable_kf6/en/powerdevil/kcontrol/powerdevil/index.html)
-- Krunner/Application Launcher (start menu): KCM for power management
-  - Search and click: `Power Management` [Category: System Settings]
-- [PowerOff / PowerDown explained: bug.kde.org](https://bugs.kde.org/show_bug.cgi?id=425915#c4)
+> HOWTO: Find the system settings tab for Power Management
+>  1. Open Krunner or Application Launcher/Dashboard/Menu (start menu)
+>  2. Search and click:<br>`Power Management`<br>[Category: System Settings]
+- [PowerOff / PowerDown explained: bugs.kde.org](https://bugs.kde.org/show_bug.cgi?id=425915#c4)
 
 #### Power Off 
 ```
