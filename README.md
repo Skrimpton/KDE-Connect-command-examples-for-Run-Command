@@ -281,4 +281,4 @@ name="MY_DEVICE"; place=LONDON; underline="————"; lat="51.50853"; lon="-
 | [Screenshot to device / phone](https://github.com/Skrimpton/KDE-Connect-command-examples-for-Run-Command/blob/main/README.md#screenshot-to-device--phone) | `kdeconnect-cli --share`  |
 | [Weather ping](https://github.com/Skrimpton/KDE-Connect-command-examples-for-Run-Command/blob/main/README.md#weather-ping---specify-name-like-above) | `kdeconnect-cli --ping-msg` |
 
-###### [Back to top]()
+###### [Back to top](https://github.com/Skrimpton/KDE-Connect-command-examples-for-Run-Command/blob/main/README.md#table-of-contents)
