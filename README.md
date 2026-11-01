@@ -1,7 +1,7 @@
 # KDE-Connect-command-examples-for-Run-Command
 > It's KDE Connect command examples for "Run Command" 🙃
 
-## Find your qdbus version
+### Find your qdbus command
 ```
 command -v qdbus qdbus{5,6} qdbus-qt{5,6}
 ```
