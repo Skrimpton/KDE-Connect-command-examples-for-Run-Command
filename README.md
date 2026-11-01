@@ -1,6 +1,5 @@
 # KDE-Connect-command-examples-for-Run-Command
-
-- It's KDE Connect command examples for "Run Command"
+> It's KDE Connect command examples for "Run Command" 🙃
 
 - You can replace `qdbus6` with your own: `command -v qdbus qdbus{5,6} qdbus-qt{5,6}`
 
@@ -75,15 +74,38 @@ qdbus6 org.kde.keyboard /component/mediacontrol org.kde.kglobalaccel.Component.i
 qdbus6 org.kde.keyboard /component/mediacontrol org.kde.kglobalaccel.Component.invokeShortcut mediavolumedown
 ```
 
-## Powerdevil (Power management)
+## Powerdevil (Power management) : Screen
 
+#### Decrease Screen Brightness
+```
+qdbus6 org.kde.kglobalaccel /component/org_kde_powerdevil org.kde.kglobalaccel.Component.invokeShortcut "Decrease Screen Brightness"
+```
 #### Decrease Screen Brightness (small)
 ```
 qdbus6 org.kde.kglobalaccel /component/org_kde_powerdevil org.kde.kglobalaccel.Component.invokeShortcut "Decrease Screen Brightness Small"
 ```
+#### Increase Screen Brightness
+```
+qdbus6 org.kde.kglobalaccel /component/org_kde_powerdevil org.kde.kglobalaccel.Component.invokeShortcut "Increase Screen Brightness"
+```
 #### Increase Screen Brightness (small)
 ```
 qdbus6 org.kde.kglobalaccel /component/org_kde_powerdevil org.kde.kglobalaccel.Component.invokeShortcut "Increase Screen Brightness Small"
+```
+
+## Powerdevil (Power management) : PowerOff / PowerDown
+
+- (Activates "When power button is pressed"-action): [Powerdevil docs](https://docs.kde.org/stable_kf6/en/powerdevil/kcontrol/powerdevil/index.html)
+- Krunner/Kicker (start menu) -> Search: "Power Management"
+- ["PowerOff"/"PowerDown" explained: bug.kde.org](https://bugs.kde.org/show_bug.cgi?id=425915#c4)
+
+#### Power Off 
+```
+qdbus6 org.kde.kglobalaccel /component/org_kde_powerdevil org.kde.kglobalaccel.Component.invokeShortcut "PowerOff"
+```
+#### Power Down
+```
+qdbus6 org.kde.kglobalaccel /component/org_kde_powerdevil org.kde.kglobalaccel.Component.invokeShortcut "PowerDown"
 ```
 
 
