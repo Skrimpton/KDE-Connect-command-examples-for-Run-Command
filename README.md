@@ -79,11 +79,11 @@ qdbus6 org.kde.keyboard /component/mediacontrol org.kde.kglobalaccel.Component.i
 
 #### Decrease Screen Brightness (small)
 ```
-org.kde.kglobalaccel /component/org_kde_powerdevil org.kde.kglobalaccel.Component.invokeShortcut "Decrease Screen Brightness Small"
+qdbus6 org.kde.kglobalaccel /component/org_kde_powerdevil org.kde.kglobalaccel.Component.invokeShortcut "Decrease Screen Brightness Small"
 ```
 #### Increase Screen Brightness (small)
 ```
-org.kde.kglobalaccel /component/org_kde_powerdevil org.kde.kglobalaccel.Component.invokeShortcut "Increase Screen Brightness Small"
+qdbus6 org.kde.kglobalaccel /component/org_kde_powerdevil org.kde.kglobalaccel.Component.invokeShortcut "Increase Screen Brightness Small"
 ```
 
 
