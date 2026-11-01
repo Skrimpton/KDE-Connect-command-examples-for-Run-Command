@@ -191,8 +191,6 @@ kdeconnect-cli --list-available
 Inspired by and building on: [Useful_commands#Screen_capture: kde userbase wiki](https://userbase.kde.org/KDE_Connect/Tutorials/Useful_commands#Screen_capture)
 > Can take little while (~5-20 seconds) after screenshot is taken by `spectacle`, before it's received on the phone
 
-
-
 ### Auto-select top ID from active list and validate ID is active before sending
 #### Screenshot - Fullscreen
 ```
@@ -203,7 +201,7 @@ kid="$(kdeconnect-cli -a --id-only | head -n 1)";  kdeconnect-cli --list-availab
 kid="$(kdeconnect-cli -a --id-only | head -n 1)";  kdeconnect-cli --list-available --id-only | grep -x "${kid}" >/dev/null && ( file="/tmp/ScreenshotKDEConnect_$(date "+%Y%m%d_%H%M%S").png"; spectacle -abo "${file}" && while ! [ -f "${file}" ]; do sleep 0.3; done && kdeconnect-cli -d "$kid" --share "${file}" )
 ```
 
-### Specify <ins>ID</ins> and validate <ins>ID</ins> is active before sending
+### Specify [ID](https://github.com/Skrimpton/KDE-Connect-command-examples-for-Run-Command/blob/main/README.md#find-available-devices-using-kdeconnect-cli) and validate <ins>ID</ins> is active before sending
 #### Screenshot - Fullscreen
 ```
 kid="MY_DEVICE_ID"; kdeconnect-cli --list-available --id-only | grep -x "${kid}" >/dev/null && ( file="/tmp/ScreenshotKDEConnect_$(date "+%Y%m%d_%H%M%S").png"; spectacle -bo "${file}" && while ! [ -f "${file}" ]; do sleep 0.3; done && kdeconnect-cli -d "${kid}" --share "${file}" )
@@ -213,7 +211,7 @@ kid="MY_DEVICE_ID"; kdeconnect-cli --list-available --id-only | grep -x "${kid}"
 kid="MY_DEVICE_ID"; kdeconnect-cli --list-available --id-only | grep -x "${kid}" >/dev/null && ( file="/tmp/ScreenshotKDEConnect_$(date "+%Y%m%d_%H%M%S").png"; spectacle -abo "${file}" && while ! [ -f "${file}" ]; do sleep 0.3; done && kdeconnect-cli -d "${kid}" --share "${file}" )
 ```
 
-### Specify <ins>name</ins> and validate <ins>name</ins> is active before sending
+### Specify [name](https://github.com/Skrimpton/KDE-Connect-command-examples-for-Run-Command/blob/main/README.md#find-available-devices-using-kdeconnect-cli) and validate <ins>name</ins> is active before sending
 #### Screenshot - Fullscreen
 ```
 name="MY_DEVICE"; kdeconnect-cli --list-available --name-only | grep -x "${name}" >/dev/null && ( file="/tmp/ScreenshotKDEConnect_$(date "+%Y%m%d_%H%M%S").png"; spectacle -bo "${file}" && while ! [ -f "${file}" ]; do sleep 0.3; done && kdeconnect-cli -n "$name" --share "${file}" )
