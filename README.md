@@ -189,6 +189,10 @@ kid="MY_DEVICE"; kdeconnect-cli --list-available --id-only | grep -x "${kid}" >/
 ```
 
 ## Weather ping - (Using <ins>name</ins>, like above)
+```
+name="MY_DEVICE"; lat="51.50853"; lon="-0.12574"; url="https://api.met.no/weatherapi/locationforecast/2.0/compact?lat=${lat}&lon=${lon}"; weather="$(curl -s "${url}" | jq -r '.properties.timeseries[0] | "Time: \(.time)\nTemp: \(.data.instant.details.air_temperature)°C\nWeather: \(.data.next_1_hours.summary.symbol_code)\nPrecipitation: \(.data.next_1_hours.details.precipitation_amount)mm"')"; kdeconnect-cli --list-available --name-only | grep -x "${name}" >/dev/null && ( kdeconnect-cli -n "${name}" --ping-msg "$(printf '%s\n%s' LONDON "${weather}")" )
+```
+
 > Weather source(s) 
 >  1. [api.met.no: developer.yr.no: HOWTO](https://developer.yr.no/doc/locationforecast/HowTO/)
 >  2. [yr.no](https://www.yr.no/en)
@@ -203,9 +207,6 @@ Dependencies
 <img width="1352" height="380" alt="Image" src="https://github.com/user-attachments/assets/128222d7-2cfc-4ad6-be9f-ac86742774f8" />
 
 
-```
-name="MY_DEVICE"; lat="51.50853"; lon="-0.12574"; url="https://api.met.no/weatherapi/locationforecast/2.0/compact?lat=${lat}&lon=${lon}"; weather="$(curl -s "${url}" | jq -r '.properties.timeseries[0] | "Time: \(.time)\nTemp: \(.data.instant.details.air_temperature)°C\nWeather: \(.data.next_1_hours.summary.symbol_code)\nPrecipitation: \(.data.next_1_hours.details.precipitation_amount)mm"')"; kdeconnect-cli --list-available --name-only | grep -x "${name}" >/dev/null && ( kdeconnect-cli -n "${name}" --ping-msg "$(printf '%s\n%s' LONDON "${weather}")" )
-```
 
 ## Sources
 1. [userbase.kde.org - KDE UserBase wiki](https://userbase.kde.org/KDE_Connect/Tutorials/Useful_commands)
