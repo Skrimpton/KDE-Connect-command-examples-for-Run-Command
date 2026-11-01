@@ -16,7 +16,7 @@
 | [Weather ping](https://github.com/Skrimpton/KDE-Connect-command-examples-for-Run-Command/blob/main/README.md#weather-ping---specify-name-like-above) | `kdeconnect-cli --ping-msg` |
 | [Sources](https://github.com/Skrimpton/KDE-Connect-command-examples-for-Run-Command/blob/main/README.md#sources) |
 
-# Adding commands to run
+# Adding commands
 1. On PC: Open KDE connect
 2. Select a paired device in the sidebar
 3. Open `Plugin Settings`
