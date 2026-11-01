@@ -2,82 +2,90 @@
 
 - It's KDE Connect command examples for "Run Command"
 
-- You can replace `"$(command -v qdbus qdbus5 qdbus6 | head -n1)"` with the qdbus command on your system, this is just the most generalized
+- You can replace `qdbus6` with your own: `command -v qdbus qdbus{5,6} qdbus-qt{5,6}`
+
 
 ## Sources
 1. [userbase.kde.org - KDE UserBase wiki](https://userbase.kde.org/KDE_Connect/Tutorials/Useful_commands)
 1. [Guilherme (GuinuxBR)](https://github.com/guinuxbr/KDEConnect-commands/blob/main/commands.md)
 
 ## Volume (PC / System)
+
 #### Volume - Down
 ```
-"$(command -v qdbus qdbus{5,6} qdbus-qt{5,6} | head -n1)" org.kde.kglobalaccel /component/kmix invokeShortcut "decrease_volume"
+qdbus6 org.kde.kglobalaccel /component/kmix invokeShortcut "decrease_volume"
 ```
 #### Volume - Up
 ```
-"$(command -v qdbus qdbus{5,6} qdbus-qt{5,6} | head -n1)" org.kde.kglobalaccel /component/kmix invokeShortcut "decrease_volume"
+qdbus6 org.kde.kglobalaccel /component/kmix invokeShortcut "decrease_volume"
 ```
 #### Volume - Mute
 ```
-"$(command -v qdbus qdbus{5,6} qdbus-qt{5,6} | head -n1)" org.kde.kglobalaccel /component/kmix invokeShortcut "mute"
+qdbus6 org.kde.kglobalaccel /component/kmix invokeShortcut "mute"
 ```
 
 ## Media
+
 #### Media - Seek Forward
 ```
-"$(command -v qdbus qdbus{5,6} qdbus-qt{5,6} | head -n1)" org.kde.keyboard /component/mediacontrol org.kde.kglobalaccel.Component.invokeShortcut seekforwardmedia
+qdbus6 org.kde.keyboard /component/mediacontrol org.kde.kglobalaccel.Component.invokeShortcut seekforwardmedia
 ```
 #### Media - Seek Forward (long)
 ```
-"$(command -v qdbus qdbus{5,6} qdbus-qt{5,6} | head -n1)" org.kde.keyboard /component/mediacontrol org.kde.kglobalaccel.Component.invokeShortcut seekforwardmedialong
+qdbus6 org.kde.keyboard /component/mediacontrol org.kde.kglobalaccel.Component.invokeShortcut seekforwardmedialong
 ```
 #### Media - Seek Backward
 ```
-"$(command -v qdbus qdbus{5,6} qdbus-qt{5,6} | head -n1)" org.kde.keyboard /component/mediacontrol org.kde.kglobalaccel.Component.invokeShortcut seekbackwardmedia
+qdbus6 org.kde.keyboard /component/mediacontrol org.kde.kglobalaccel.Component.invokeShortcut seekbackwardmedia
 ```
 #### Media - Seek Backward (long)
 ```
-"$(command -v qdbus qdbus{5,6} qdbus-qt{5,6} | head -n1)" org.kde.keyboard /component/mediacontrol org.kde.kglobalaccel.Component.invokeShortcut seekbackwardmedialong
+qdbus6 org.kde.keyboard /component/mediacontrol org.kde.kglobalaccel.Component.invokeShortcut seekbackwardmedialong
 ```
 #### Media - Play/Pause
 ```
-"$(command -v qdbus qdbus{5,6} qdbus-qt{5,6} | head -n1)" org.kde.keyboard /component/mediacontrol org.kde.kglobalaccel.Component.invokeShortcut playpausemedia
+qdbus6 org.kde.keyboard /component/mediacontrol org.kde.kglobalaccel.Component.invokeShortcut playpausemedia
 ```
-
 #### Media - Next
 ```
-"$(command -v qdbus qdbus5 qdbus6 | head -n1)" org.kde.keyboard /component/mediacontrol org.kde.kglobalaccel.Component.invokeShortcut nextmedia
+qdbus6 org.kde.keyboard /component/mediacontrol org.kde.kglobalaccel.Component.invokeShortcut nextmedia
 ```
-
 #### Media - Previous
 ```
-"$(command -v qdbus qdbus5 qdbus6 | head -n1)" org.kde.keyboard /component/mediacontrol org.kde.kglobalaccel.Component.invokeShortcut previousmedia
+qdbus6 org.kde.keyboard /component/mediacontrol org.kde.kglobalaccel.Component.invokeShortcut previousmedia
 ```
-
 #### Media - Play
 ```
-"$(command -v qdbus qdbus5 qdbus6 | head -n1)" org.kde.keyboard /component/mediacontrol org.kde.kglobalaccel.Component.invokeShortcut playmedia
+qdbus6 org.kde.keyboard /component/mediacontrol org.kde.kglobalaccel.Component.invokeShortcut playmedia
 ```
-
 #### Media - Pause
 ```
-"$(command -v qdbus qdbus5 qdbus6 | head -n1)" org.kde.keyboard /component/mediacontrol org.kde.kglobalaccel.Component.invokeShortcut pausemedia
+qdbus6 org.kde.keyboard /component/mediacontrol org.kde.kglobalaccel.Component.invokeShortcut pausemedia
 ```
-
 #### Media - Stop
 ```
-"$(command -v qdbus qdbus5 qdbus6 | head -n1)" org.kde.keyboard /component/mediacontrol org.kde.kglobalaccel.Component.invokeShortcut stopmedia
+qdbus6 org.kde.keyboard /component/mediacontrol org.kde.kglobalaccel.Component.invokeShortcut stopmedia
 ```
-
 #### Media - Volume Up
 ```
-"$(command -v qdbus qdbus5 qdbus6 | head -n1)" org.kde.keyboard /component/mediacontrol org.kde.kglobalaccel.Component.invokeShortcut mediavolumeup
+qdbus6 org.kde.keyboard /component/mediacontrol org.kde.kglobalaccel.Component.invokeShortcut mediavolumeup
 ```
-
 #### Media - Volume Down
 ```
-"$(command -v qdbus qdbus5 qdbus6 | head -n1)" org.kde.keyboard /component/mediacontrol org.kde.kglobalaccel.Component.invokeShortcut mediavolumedown
+qdbus6 org.kde.keyboard /component/mediacontrol org.kde.kglobalaccel.Component.invokeShortcut mediavolumedown
 ```
+
+## Powerdevil (Power management)
+
+#### Decrease Screen Brightness (small)
+```
+org.kde.kglobalaccel /component/org_kde_powerdevil org.kde.kglobalaccel.Component.invokeShortcut "Decrease Screen Brightness Small"
+```
+#### Increase Screen Brightness (small)
+```
+org.kde.kglobalaccel /component/org_kde_powerdevil org.kde.kglobalaccel.Component.invokeShortcut "Increase Screen Brightness Small"
+```
+
 
 ## Screenshot to phone (Auto-selects top id from active list)
 ##### Dependencies:
