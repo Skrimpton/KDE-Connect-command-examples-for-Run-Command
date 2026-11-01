@@ -193,7 +193,7 @@ name="MY_DEVICE"; kdeconnect-cli --list-available --name-only | grep -x "${name}
 
 ## Weather ping - (Using <ins>name</ins>, like above)
 ```
-name="moto"; place=LONDON; underline="————"; lat="51.50853"; lon="-0.12574"; url="https://api.met.no/weatherapi/locationforecast/2.0/compact?lat=${lat}&lon=${lon}"; weather="$(curl -s "${url}" | jq -r '.properties.timeseries[0] | "Time: \(.time)\nTemp: \(.data.instant.details.air_temperature)°C\nWeather: \(.data.next_1_hours.summary.symbol_code)\nPrecipitation: \(.data.next_1_hours.details.precipitation_amount)mm"')"; kdeconnect-cli --list-available --name-only | grep -x "${name}" >/dev/null && ( kdeconnect-cli -n "${name}" --ping-msg "$(printf '%s\n%s\n%s' "${place}" "${underline}" "${weather}")" )
+name="MY_DEVICE"; place=LONDON; underline="————"; lat="51.50853"; lon="-0.12574"; url="https://api.met.no/weatherapi/locationforecast/2.0/compact?lat=${lat}&lon=${lon}"; weather="$(curl -s "${url}" | jq -r '.properties.timeseries[0] | "Time: \(.time)\nTemp: \(.data.instant.details.air_temperature)°C\nWeather: \(.data.next_1_hours.summary.symbol_code)\nPrecipitation: \(.data.next_1_hours.details.precipitation_amount)mm"')"; kdeconnect-cli --list-available --name-only | grep -x "${name}" >/dev/null && ( kdeconnect-cli -n "${name}" --ping-msg "$(printf '%s\n%s\n%s' "${place}" "${underline}" "${weather}")" )
 ```
 
 Dependencies
